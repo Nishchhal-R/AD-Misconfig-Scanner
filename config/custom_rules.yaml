@@ -1,0 +1,8 @@
+- id: "CUSTOM-1"
+  name: "Check for a specific registry key"
+  target: "client"
+  command: "Get-ItemProperty -Path 'HKLM:\\Software\\CustomApp' -Name SecureSetting"
+  expected_output: "Enabled"
+  severity: "Medium"
+  mitre_attack: "N/A"
+  recommendation: "Ensure SecureSetting is set to 'Enabled'."
